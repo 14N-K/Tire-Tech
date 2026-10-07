@@ -1,0 +1,74 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap');
+
+:root{
+	--black: #333333;
+	--mainColor: #801494;
+	--hoverColor: #ce65e1;
+}
+
+
+*{
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+	box-sizing: border-box;  /* 추가 */
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+	font-family: 'Noto Sans KR', "맑은 고딕", sans-serif;
+	color: var(--black);
+	font-size: 16px;
+	word-break: keep-all;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+img{
+	vertical-align: middle;
+}
+.mobile{
+	display: none;
+}
+
+@media (max-width: 768px) {
+	.desktop{
+		display: none;
+	}
+	.mobile{
+		display: block;
+	}
+}
+
+.btn{
+	border: 1px solid #801494;
+	color: #801494;
+	background-color: transparent;
+	padding: 15px 20px;
+}

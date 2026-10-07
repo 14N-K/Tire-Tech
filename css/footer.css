@@ -1,0 +1,109 @@
+@charset "UTF-8";
+
+#footer_container{
+    background-color: #464646;
+    padding: 10px 20px;
+}
+footer{
+    width: 1092px;
+    margin: auto;
+    color: #b3b3b3;
+    font-size: 12px;
+}
+footer::after{
+    display: block;
+    content: "";
+    clear: both;
+}
+
+.logo{
+    float: left;
+}
+
+.info{
+    float: left;
+    margin-left: 20px;
+    line-height: 1.4;
+}
+.info a{
+    color: #808080;
+}
+
+.link_wrap{
+    float: right;
+    margin: 16px 20px 0 0;
+}
+.link_wrap a{
+    padding: 0 3px;
+}
+.link_wrap a:nth-child(2){
+    color: #fff;
+    font-weight: bold;
+}
+
+.familySite_wrap{
+    float: right;
+    margin-top: 12px;
+}
+.familySite_wrap select{
+    appearance: none;
+    outline: none;
+    padding: 3px 10px;
+    background-image: url('../img/icon_snb_arr.png');
+    background-repeat: no-repeat;
+    background-position: right center;
+}
+
+
+@media (max-width: 1169px) {
+    footer{
+        width: 952px;
+    }
+}
+
+@media (max-width: 991px) {
+    footer{
+        width: 712px;
+        position: relative;
+    }
+
+    .logo{
+        float: none;
+    }
+    .info{
+        float: none;
+        margin-left: 0;
+        margin-top: 10px;
+    }
+    .link_wrap{
+        float: none;
+        margin: 0;
+        position: absolute;
+        bottom: 10px;
+        right: 0;
+    }
+    .familySite_wrap{
+        float: none;
+        margin-top: 0;
+        position: absolute;
+        top: 10px;
+        right: 0;
+    }
+}
+
+@media (max-width: 768px) {
+    footer{
+        width: 100%;
+        text-align: center;
+    }
+
+    .logo{}
+    .info{}
+    .link_wrap{
+        position: relative;
+        bottom: auto;
+    }
+    .familySite_wrap{
+        display: none;
+    }
+}

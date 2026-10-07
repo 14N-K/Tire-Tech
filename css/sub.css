@@ -1,0 +1,288 @@
+@charset "UTF-8";
+
+#sub_container { 
+    margin: 59px 0; 
+}
+
+.sub_visual { 
+    position: relative; 
+    height: 110px; 
+    background: #eee; 
+    overflow: hidden; 
+}
+
+.sub_visual .title { 
+    position: absolute; 
+    left: 0; 
+    bottom: 33px; 
+    width: 100%; 
+    text-align: center; 
+    z-index: 100; 
+}
+
+.sub_visual .title h1 { 
+    display: inline-block; 
+    font-size: 47px; 
+}
+
+.sub_visual figure { 
+    position: relative; 
+    height: 110px;
+}
+
+.sub_visual img {  
+    max-width: 1920px; 
+    position: absolute; 
+    bottom: 0; 
+    left: 50%; 
+    transform: translateX(-50%);
+}
+
+.sub_nav { 
+    border-bottom: 1px solid #ccc; 
+}
+
+.container { 
+    width: 1092px; 
+    margin: auto; 
+}
+
+.sub_nav table {  
+    margin: auto; 
+    margin-bottom: -1px; 
+}
+
+.sub_nav table tr { 
+
+}
+
+.sub_nav table td { 
+    position: relative; 
+    padding: 0 20px; 
+    text-align: center; 
+    vertical-align: middle; 
+}
+
+.sub_nav table td a { 
+    display: inline-block; 
+    padding: 10px; 
+    color: #636363; 
+    line-height: 1.4; 
+}
+
+/* .active 적용 */
+.sub_nav table td.active:after {
+    position: absolute; 
+    display: block; 
+    content: "";
+    width: 22px; 
+    height: 5px;
+    background: url('../img/icon_snb_arr.png');
+    left: 50%; 
+    margin-left: -11px; 
+}
+
+.sub_nav table td.active a { 
+    border-bottom: 1px solid var(--mainColor); 
+    color: var(--mainColor); 
+    font-weight: 700; 
+}
+
+/* content_wrap */
+.content_wrap { 
+
+}
+
+.sub_content { 
+    padding-top: 40px; 
+}
+
+.con_title { 
+    position: relative; 
+    margin: 30px 0 16px 0; 
+}
+
+.title_txt { 
+
+}
+
+.title_txt h3 { 
+    font-size: 34px; 
+    font-weight: 600; 
+    color: #414042;
+}
+
+.title_txt span {  
+    display: block; 
+    margin-top: 14px; 
+    color: #757575; 
+    line-height: 1.5; 
+}
+
+.sns_btns { 
+    position: absolute; 
+    right: 0; 
+    top: 0; 
+}
+
+.sns_btns a + a:before { 
+    display: inline-block; 
+    content: ""; 
+    width: 1px; 
+    height: 13px; 
+    background: #969696;  
+}
+
+.title_img img { 
+    width: 100%; 
+}
+
+.find_btn_wrap { 
+    padding: 50px 0; 
+    text-align: center; 
+}
+
+.find_btn_wrap .btn { 
+    font-size: 18px; 
+    font-weight: 500; 
+}
+
+/* event_btn_wrap */
+
+.event_btn_wrap{
+    padding: 40px 0;
+}
+.tab_btn{
+    margin-bottom: 40px;
+    display: flex;
+}
+.event_btn_wrap li{
+    flex: 1;
+    background-color: #E6E7E8;
+    color: #58595b;
+}
+.event_btn_wrap li.active{
+    background-color: var(--mainColor);
+    color: #fff;
+}
+.event_btn_wrap li a{
+    display: block;
+    text-align: center;
+    padding: 16px 0;
+}
+
+.tab_content{
+}
+.tab_content > div{
+    display: none;
+    text-align: center;
+}
+.tab_content > div.active{
+    display: block;
+}
+/* event_btn_wrap */
+
+/* tiretech_box_wrap */
+.tiretech_box_wrap{
+    padding: 30px 0;
+}
+.tiretech_box_wrap ul{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+.tiretech_box_wrap li{
+    margin-bottom: 20px;
+}
+.tiretech_box_wrap h4{
+    font-weight: 600;
+    font-size: 22px;
+    margin-bottom: 10px;
+    padding-top: 5px;
+    background: url(../img/sub/icon_step_top.gif) left top no-repeat;
+}
+.tiretech_box_wrap p{
+    line-height: 1.4;
+}
+/* tiretech_box_wrap - END */
+
+@media (max-width: 1500px) {
+    .sub_visual img { 
+        width: 1500px; 
+    }
+}
+
+@media (max-width: 1169px) {
+    #sub_container { 
+        margin-top: 0; 
+    } 
+    
+    .sub_visual img { 
+        height: 100%; 
+        width: auto; 
+    }
+    
+    .container { 
+        width: 100%; 
+        padding: 0 30px; 
+    }
+
+    .sub_nav table td { 
+        padding: 0 10px; 
+    }
+}
+
+@media (max-width: 991px) {
+    .sub_visual img { 
+        transform: translateX(-60%);  
+    }
+    
+    .container { 
+        width: 712px; 
+        padding: 0; 
+    }
+    
+    .sub_nav table { 
+        width: 100%; 
+        table-layout: fixed; 
+    }
+    
+    .sub_nav table td { 
+        padding: 0; 
+    }
+    
+    .sub_nav table td a { 
+        width: 100%; 
+    }
+    
+    .title_txt h3 { 
+        font-size: 25px; 
+    }
+    
+    .title_txt span { 
+        font-size: 14px; 
+    } 
+}
+
+@media (max-width: 768px) {
+    .sub_visual img { 
+        opacity: 0.3;
+    }
+    
+    .container { 
+        width: 100%; 
+        padding: 0 20px; 
+    }
+    
+    .sub_nav { 
+        display: none; 
+    }
+
+    .sns_btns a:last-child { 
+        display: none; 
+    }
+    
+    .sns_btns img { 
+        width: 24px; 
+    }
+}
